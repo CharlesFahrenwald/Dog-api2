@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dog Api">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog API</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <section id="container">
+      <h1 class="display">Dog API: Simple GET Request</h1>
+      <hr>
+      <div id="input"></div>
+      <form id="dog-num-form">
+        <div class="form-group">
+          <h3>What breed are you looking for?</h3>
+          <input
+            type="text"
+            id="dog-breed"
+            class="form-control"
+            placeholder="Type breed here"
+            required
+            novaildate id="createForm"
+          />
+        </div>
+        <div class="button">
+          <input
+            formnovalidate class="btn-btn-success"
+            type="submit"
+            id="get"
+            class="btn btn-primary"
+            value="Get a dog photo"/>
+        </div>
+        <div class="results hidden">
+        <h2> Your Photos</h2>
+      </div>
+      </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
